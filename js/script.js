@@ -46,6 +46,14 @@
         citation: "Empire Strikes Back",
         tags: ["Motivation", "Try", "Wisdom"]
 
+      },
+      {
+        quote: `Who is your daddy and what does he do`,
+        source: "John Kimble",
+        year: 1990,
+        citation: "Kindergarten Cop",
+        tags: ["Funny", "School", "Cop"]
+
       }
       ];
 
@@ -54,7 +62,7 @@
       //****************
 
    getRandomQuote  = (arr) => {
-        return arr[Math.floor(Math.random() * 5)];
+        return arr[Math.floor(Math.random() * arr.length)];
       }
 
 
@@ -95,7 +103,7 @@
       //****************
       // Invokes the printQuote function every 3 seconds or 3000ms.
       //****************
-      window.setInterval(printQuote, 4000);
+      window.setInterval(printQuote, 4500);
 
 
       //****************
