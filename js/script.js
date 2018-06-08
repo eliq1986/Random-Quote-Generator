@@ -34,6 +34,7 @@
       {
         quote: `Kid, there are heroes and there are legends. Heroes get remembered, but legends never die. Follow your heart, kid, and you’ll never go wrong.`,
         source:  "Babe Ruth",
+        year: 1993,
         citation: "The Sandlot",
         tags: ["Fun", "Impossible", "Kind"]
 
@@ -41,6 +42,7 @@
       {
         quote: `Do, or do not. There is no “try`,
         source: "Yoda",
+        year: 1980,
         citation: "Empire Strikes Back",
         tags: ["Motivation", "Try", "Wisdom"]
 
