@@ -3,7 +3,7 @@ body {
   background-color: #36b55c;
   color: white;
   font-family: 'Playfair Display', serif;
-  transition: background .5s;
+  transition: background .6s;
 }
 #quote-box {
   position: absolute;
