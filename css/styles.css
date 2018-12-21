@@ -1,62 +1,57 @@
+@charset "UTF-8";
 body {
   /*text-align: center;*/
   background-color: #36b55c;
-  color: white;
+  color: #fff;
   font-family: 'Playfair Display', serif;
-  transition: background .6s;
-}
+  transition: background .6s; }
+
 #quote-box {
   position: absolute;
   top: 20%;
   left: 10%;
   right: 10%;
   width: 80%;
-  line-height: .5;
-}
+  line-height: .5; }
+
 .quote {
   font-size: 4rem;
   font-weight: 400;
   line-height: 1.1;
   position: relative;
-  margin: 0;
-  }
-.quote:before, .quote:after {
-  font-size: 6rem;
-  line-height: 2.5rem;
-  position: absolute;
-}
-.quote:before {
-  content: "“";
-  top: .25em;
-  left: -.5em;
-}
-.quote:after {
-  content: "”";
-  bottom: -.1em;
-  margin-left: .1em;
-  position: absolute;
-}
+  margin: 0; }
+  .quote:before, .quote:after {
+    font-size: 6rem;
+    line-height: 2.5rem;
+    position: absolute; }
+  .quote:before {
+    content: "“";
+    top: .25em;
+    left: -.5em; }
+  .quote:after {
+    content: "”";
+    bottom: -.1em;
+    margin-left: .1em;
+    position: absolute; }
+
 .source {
-  font-size: 1.25rem;;
+  font-size: 1.25rem;
   letter-spacing: 0.05em;
   line-height: 1.1;
   text-align: right;
-  margin-right: 4em;
-}
-.source:before {
-  content: "—";
-}
+  margin-right: 4em; }
+  .source:before {
+    content: "—"; }
+
 .citation {
-  font-style: italic;
-}
-.citation:before {
-  content: ", ";
-  font-style: normal;
-}
+  font-style: italic; }
+  .citation:before {
+    content: ", ";
+    font-style: normal; }
+
 .year:before {
   content: ", ";
-  font-style: normal;
-}
+  font-style: normal; }
 
 #loadQuote {
   position: fixed;
@@ -70,23 +65,16 @@ body {
   color: #fff;
   background-color: #36b55c;
   padding: 15px 0;
-  transition: .5s ;
-}
-#loadQuote:hover {
-  background-color: rgba(255,255,255,.25);
-}
-#loadQuote:focus {
-  outline: none;
-}
+  transition: .5s; }
+  #loadQuote:hover {
+    background-color: rgba(255, 255, 255, 0.25); }
+  #loadQuote:focus {
+    outline: none; }
 
 @media (max-width: 420px) {
   .quote {
-    font-size: 2.5rem;
-  }
+    font-size: 2.5rem; }
   .quote:before, .quote:after {
-    font-size: 3rem;
-  }
+    font-size: 3rem; }
   .source {
-    font-size: 1rem;
-  }
-}
+    font-size: 1rem; } }

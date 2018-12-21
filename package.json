@@ -1,0 +1,26 @@
+{
+  "name": "Random-Quote-Generator",
+  "version": "1.0.0",
+  "description": "[DEMO](https://eliq1986.github.io/Random-Quote-Generator/)",
+  "main": "index.js",
+  "scripts": {
+   "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliq1986/Random-Quote-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliq1986/Random-Quote-Generator/issues"
+  },
+  "homepage": "https://github.com/eliq1986/Random-Quote-Generator#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

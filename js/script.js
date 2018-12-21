@@ -50,21 +50,19 @@ const quotes = [
 ];
 
 // Random quote function, pass a array with objects and selects random object from array.
-getRandomQuote = (arr) => arr[Math.floor(Math.random() * arr.length)];
+getRandomQuote = arr => arr[Math.floor(Math.random() * arr.length)];
 
 // CREATES 3 RANDOM RGB COLORS AND ADDS TO BACKGROUND
 getRandomBackGround = () => {
   let r = Math.floor(Math.random() * 255);
   let g = Math.floor(Math.random() * 255);
   let b = Math.floor(Math.random() * 255);
-  const body = document.querySelector("body");
-  body.style.background = `rgb(${r},${g},${b})`;
+  document.querySelector("body").style.background = `rgb(${r},${g},${b})`;
 
 }
 
 // function calls two previously created functions.  Function prints out random quote to the DOM.
-printQuote = () => {
-   
+const printQuote = () => {
   getRandomBackGround()
   let quoteObj = getRandomQuote(quotes);
 
@@ -73,7 +71,6 @@ printQuote = () => {
               <span class="citation"> ${quoteObj.citation}</span>
               <span class="year">${quoteObj.year} </span>
             </p>`
-
   document.getElementById('quote-box').innerHTML = html;
 }
 
