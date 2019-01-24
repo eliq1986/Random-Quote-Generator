@@ -8,42 +8,42 @@ const quotes = [
     quote: "Is Butter a carb",
     source: "Regina George",
     year: 2004,
-    citation: "Mean Girls",
+    citation: "Mean Girls"
 
 
   }, {
     quote: `To see the world, things dangerous to come to, to see behind walls, draw closer, to find each other, and to feel. That is the purpose of life`,
     source: "Walter Mitty",
     year: 2013,
-    citation: "The Secret Life Of Walter Mitty",
+    citation: "The Secret Life Of Walter Mitty"
 
 
   }, {
     quote: `What we do in life echoes in eternity.`,
     source: "Maximus",
     year: 2000,
-    citation: "Gladiator",
+    citation: "Gladiator"
 
 
   }, {
     quote: `Kid, there are heroes and there are legends. Heroes get remembered, but legends never die. Follow your heart, kid, and you’ll never go wrong.`,
     source: "Babe Ruth",
     year: 1993,
-    citation: "The Sandlot",
+    citation: "The Sandlot"
 
 
   }, {
     quote: `Do, or do not. There is no “try`,
     source: "Yoda",
     year: 1980,
-    citation: "Empire Strikes Back",
+    citation: "Empire Strikes Back"
 
 
   }, {
     quote: `Who is your daddy and what does he do`,
     source: "John Kimble",
     year: 1990,
-    citation: "Kindergarten Cop",
+    citation: "Kindergarten Cop"
 
 
   }
@@ -54,10 +54,11 @@ getRandomQuote = arr => arr[Math.floor(Math.random() * arr.length)];
 
 // CREATES 3 RANDOM RGB COLORS AND ADDS TO BACKGROUND
 getRandomBackGround = () => {
-  let r = Math.floor(Math.random() * 255);
-  let g = Math.floor(Math.random() * 255);
-  let b = Math.floor(Math.random() * 255);
-  document.querySelector("body").style.background = `rgb(${r},${g},${b})`;
+   let rgbArr = [];
+   for (let i = 0; i < 3; i++) {
+     rgb.push(Math.floor(Math.random() * 255));
+   }
+   document.querySelector("body").style.background = `rgb(${rgbArr[0]},${rgbArr[1]},${rgbArr[2]})`;
 
 }
 
@@ -65,7 +66,6 @@ getRandomBackGround = () => {
 const printQuote = () => {
   getRandomBackGround()
   let quoteObj = getRandomQuote(quotes);
-
   let html = `<p class="quote">${quoteObj.quote}</p>
               <p class="source">${quoteObj.source}
               <span class="citation"> ${quoteObj.citation}</span>
