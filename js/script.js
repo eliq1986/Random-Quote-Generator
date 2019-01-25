@@ -44,8 +44,6 @@ const quotes = [
     source: "John Kimble",
     year: 1990,
     citation: "Kindergarten Cop"
-
-
   }
 ];
 
