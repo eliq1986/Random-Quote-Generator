@@ -62,8 +62,9 @@ const getRandomBackGround = () => {
 
 // function calls two previously created functions.  Function prints out random quote to the DOM.
 const printQuote = () => {
-  getRandomBackGround()
-  let { quote, source , citation, year } = getRandomQuote(quotes);
+  getRandomBackGround();
+
+  const { quote, source , citation, year } = getRandomQuote(quotes);
   let html = `<p class="quote">${quote}</p>
               <p class="source">${source}
               <span class="citation"> ${citation}</span>
