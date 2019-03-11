@@ -44,16 +44,14 @@ const quotes = [
     source: "John Kimble",
     year: 1990,
     citation: "Kindergarten Cop"
-
-
   }
 ];
 
 // Random quote function, pass a array with objects and selects random object from array.
-getRandomQuote = arr => arr[Math.floor(Math.random() * arr.length)];
+const getRandomQuote = arr => arr[Math.floor(Math.random() * arr.length)];
 
 // CREATES 3 RANDOM RGB COLORS AND ADDS TO BACKGROUND
-getRandomBackGround = () => {
+const getRandomBackGround = () => {
    let rgbArr = [];
    for (let i = 0; i < 3; i++) {
      rgbArr.push(Math.floor(Math.random() * 255));
